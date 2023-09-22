@@ -1,27 +1,27 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgb(255, 255, 255);
-  background-color: #242424;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+
+.mainDiv {
+  @apply bg-slate-900 h-[100vh] text-white flex justify-center items-center flex-col;
 }
-
- 
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
+.loginH1 {
+  @apply font-semibold mb-5 text-[30px];
 }
- 
+.loginDiv {
+  @apply flex flex-col justify-center items-center bg-slate-700 p-5 rounded-lg border-t-4 border-orange-300 sm:w-[500px] w-[90%] shadow-md shadow-slate-200; 
+}
+.loginForm {
+  @apply flex flex-col gap-6 sm:w-[60%] w-[80%];
+}
+.formInput{
+    @apply bg-transparent w-[100%] border-b-2 border-orange-300 rounded-sm outline-none text-center py-4 text-[18px];
+}
+.lsBtn{
+    @apply mt-5 bg-orange-300 rounded-sm py-1 text-[25px] font-bold text-slate-700;
+}
+.loginP{
+    @apply my-8 
+}
